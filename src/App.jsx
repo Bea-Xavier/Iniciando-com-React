@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import pou from './assets/pou.jpg'
 import './App.css'
+import meuComponente from './components/meuComponente'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,16 +18,16 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" /> */}
         </div>
         <div>
-          <h1>Get started</h1>
+          {meuComponente()}
           <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+            Este que você está vendo é o Pou Triste e Zoiudo, de oi para ele!
           </p>
         </div>
         <button
           className="counter"
           onClick={() => setCount((count) => count + 1)}
         >
-          Count is {count}
+          A Mariana conta:  {count}
         </button>
       </section>
 
