@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import pou from './assets/pou.jpg'
+import mini from './assets/pouu.png'
 import './App.css'
 import meuComponente from './components/meuComponente'
 
@@ -35,9 +36,11 @@ function App() {
 
       <section id="next-steps">
         <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
+          {/* <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
-          </svg>
+          </svg> */}
+          <img src={mini} className="pouzin2" width="50" height="50"/>
+          
           <h2>Documentation</h2>
           <p>Your questions, answered</p>
           <ul>
@@ -115,7 +118,6 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-      <section id="spacer"></section>
     </>
   )
 }
